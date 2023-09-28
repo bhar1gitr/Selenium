@@ -5,8 +5,8 @@ async function exampleTest() {
   let driver = await new Builder().forBrowser('chrome').build();
   try {
     await driver.get('http://moodle.apsit.org.in/moodle/login/index.php');
-    await driver.findElement(By.name('username')).sendKeys('21104023');
-    await driver.findElement(By.name('password')).sendKeys('21104023@Apsit');
+    await driver.findElement(By.name('username')).sendKeys('Your_Moodle_ID');
+    await driver.findElement(By.name('password')).sendKeys('Your_Password');
     await driver.findElement(By.id('loginbtn')).click();
     // Wait for the login to complete (you may need to customize this)
     await driver.sleep(5000); // Wait for 5 seconds 
